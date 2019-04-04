@@ -12,8 +12,9 @@ load_dotenv(dotenv_path)
 
 # Application
 DEVELOPER_EMAIL = os.environ.get('DEVELOPER_EMAIL', None)
-LOGGER_LEVEL = int(os.environ['LOGGER_LEVEL'], 'INFO')
+LOGGER_LEVEL = os.environ.get('LOGGER_LEVEL', 'INFO')
 SECRET_KEY = os.environ.get('SECRET_KEY', 'SECRET_KEY')
+APP_NAME = os.environ.get('APP_NAME', 'APP_NAME')
 
 # Celery
 CELERY_RESULT_BACKEND = os.environ.get('CELERY_RESULT_BACKEND')

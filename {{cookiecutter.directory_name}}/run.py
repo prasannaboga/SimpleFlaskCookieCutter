@@ -5,7 +5,7 @@ app = create_app(None)
 
 @app.context_processor
 def inject_variables():
-    return dict(envrionment=app.config.get('ENV', 'ENV'))
+    return dict(envrionment=app.config.get('ENV', 'ENV'), app_name=app.config.get('APP_NAME', 'APP_NAME'))
 
 
 if __name__ == '__main__':
