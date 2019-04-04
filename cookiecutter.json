@@ -1,0 +1,5 @@
+{
+    "directory_name": "SampleFlask",
+	"application_name": "SampleApplication",
+	"logger_level": "DEBUG"
+}
